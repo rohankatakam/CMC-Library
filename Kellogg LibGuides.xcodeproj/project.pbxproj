@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */; };
+		3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */; };
+		3FE41BE11F03FA9B0075DC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE41BDF1F03FA9B0075DC1B /* Main.storyboard */; };
+		3FE41BE31F03FA9B0075DC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE41BE21F03FA9B0075DC1B /* Assets.xcassets */; };
+		3FE41BE61F03FA9B0075DC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE41BE41F03FA9B0075DC1B /* LaunchScreen.storyboard */; };
+		3FE41BF11F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BF01F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift */; };
+		3FE41BFC1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BFB1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FE41BED1F03FA9B0075DC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE41BD01F03FA9B0075DC1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE41BD71F03FA9B0075DC1B;
+			remoteInfo = "Kellogg LibGuides";
+		};
+		3FE41BF81F03FA9B0075DC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE41BD01F03FA9B0075DC1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE41BD71F03FA9B0075DC1B;
+			remoteInfo = "Kellogg LibGuides";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kellogg LibGuides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FE41BE01F03FA9B0075DC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FE41BE21F03FA9B0075DC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FE41BE51F03FA9B0075DC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FE41BE71F03FA9B0075DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE41BEC1F03FA9B0075DC1B /* Kellogg LibGuidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kellogg LibGuidesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE41BF01F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kellogg_LibGuidesTests.swift; sourceTree = "<group>"; };
+		3FE41BF21F03FA9B0075DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE41BF71F03FA9B0075DC1B /* Kellogg LibGuidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kellogg LibGuidesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE41BFB1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kellogg_LibGuidesUITests.swift; sourceTree = "<group>"; };
+		3FE41BFD1F03FA9B0075DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE41BD51F03FA9B0075DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BE91F03FA9B0075DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BF41F03FA9B0075DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FE41BCF1F03FA9B0075DC1B = {
+			isa = PBXGroup;
+			children = (
+				3FE41BDA1F03FA9B0075DC1B /* Kellogg LibGuides */,
+				3FE41BEF1F03FA9B0075DC1B /* Kellogg LibGuidesTests */,
+				3FE41BFA1F03FA9B0075DC1B /* Kellogg LibGuidesUITests */,
+				3FE41BD91F03FA9B0075DC1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE41BD91F03FA9B0075DC1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */,
+				3FE41BEC1F03FA9B0075DC1B /* Kellogg LibGuidesTests.xctest */,
+				3FE41BF71F03FA9B0075DC1B /* Kellogg LibGuidesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE41BDA1F03FA9B0075DC1B /* Kellogg LibGuides */ = {
+			isa = PBXGroup;
+			children = (
+				3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */,
+				3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */,
+				3FE41BDF1F03FA9B0075DC1B /* Main.storyboard */,
+				3FE41BE21F03FA9B0075DC1B /* Assets.xcassets */,
+				3FE41BE41F03FA9B0075DC1B /* LaunchScreen.storyboard */,
+				3FE41BE71F03FA9B0075DC1B /* Info.plist */,
+			);
+			path = "Kellogg LibGuides";
+			sourceTree = "<group>";
+		};
+		3FE41BEF1F03FA9B0075DC1B /* Kellogg LibGuidesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE41BF01F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift */,
+				3FE41BF21F03FA9B0075DC1B /* Info.plist */,
+			);
+			path = "Kellogg LibGuidesTests";
+			sourceTree = "<group>";
+		};
+		3FE41BFA1F03FA9B0075DC1B /* Kellogg LibGuidesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE41BFB1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift */,
+				3FE41BFD1F03FA9B0075DC1B /* Info.plist */,
+			);
+			path = "Kellogg LibGuidesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE41BD71F03FA9B0075DC1B /* Kellogg LibGuides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE41C001F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuides" */;
+			buildPhases = (
+				3FE41BD41F03FA9B0075DC1B /* Sources */,
+				3FE41BD51F03FA9B0075DC1B /* Frameworks */,
+				3FE41BD61F03FA9B0075DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kellogg LibGuides";
+			productName = "Kellogg LibGuides";
+			productReference = 3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FE41BEB1F03FA9B0075DC1B /* Kellogg LibGuidesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE41C031F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesTests" */;
+			buildPhases = (
+				3FE41BE81F03FA9B0075DC1B /* Sources */,
+				3FE41BE91F03FA9B0075DC1B /* Frameworks */,
+				3FE41BEA1F03FA9B0075DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE41BEE1F03FA9B0075DC1B /* PBXTargetDependency */,
+			);
+			name = "Kellogg LibGuidesTests";
+			productName = "Kellogg LibGuidesTests";
+			productReference = 3FE41BEC1F03FA9B0075DC1B /* Kellogg LibGuidesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FE41BF61F03FA9B0075DC1B /* Kellogg LibGuidesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE41C061F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesUITests" */;
+			buildPhases = (
+				3FE41BF31F03FA9B0075DC1B /* Sources */,
+				3FE41BF41F03FA9B0075DC1B /* Frameworks */,
+				3FE41BF51F03FA9B0075DC1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE41BF91F03FA9B0075DC1B /* PBXTargetDependency */,
+			);
+			name = "Kellogg LibGuidesUITests";
+			productName = "Kellogg LibGuidesUITests";
+			productReference = 3FE41BF71F03FA9B0075DC1B /* Kellogg LibGuidesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE41BD01F03FA9B0075DC1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rohan Katakam";
+				TargetAttributes = {
+					3FE41BD71F03FA9B0075DC1B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3U6GMB8U4J;
+						ProvisioningStyle = Automatic;
+					};
+					3FE41BEB1F03FA9B0075DC1B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3U6GMB8U4J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FE41BD71F03FA9B0075DC1B;
+					};
+					3FE41BF61F03FA9B0075DC1B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3U6GMB8U4J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FE41BD71F03FA9B0075DC1B;
+					};
+				};
+			};
+			buildConfigurationList = 3FE41BD31F03FA9B0075DC1B /* Build configuration list for PBXProject "Kellogg LibGuides" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FE41BCF1F03FA9B0075DC1B;
+			productRefGroup = 3FE41BD91F03FA9B0075DC1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE41BD71F03FA9B0075DC1B /* Kellogg LibGuides */,
+				3FE41BEB1F03FA9B0075DC1B /* Kellogg LibGuidesTests */,
+				3FE41BF61F03FA9B0075DC1B /* Kellogg LibGuidesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE41BD61F03FA9B0075DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE41BE61F03FA9B0075DC1B /* LaunchScreen.storyboard in Resources */,
+				3FE41BE31F03FA9B0075DC1B /* Assets.xcassets in Resources */,
+				3FE41BE11F03FA9B0075DC1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BEA1F03FA9B0075DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BF51F03FA9B0075DC1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE41BD41F03FA9B0075DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */,
+				3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BE81F03FA9B0075DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE41BF11F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE41BF31F03FA9B0075DC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE41BFC1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FE41BEE1F03FA9B0075DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE41BD71F03FA9B0075DC1B /* Kellogg LibGuides */;
+			targetProxy = 3FE41BED1F03FA9B0075DC1B /* PBXContainerItemProxy */;
+		};
+		3FE41BF91F03FA9B0075DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE41BD71F03FA9B0075DC1B /* Kellogg LibGuides */;
+			targetProxy = 3FE41BF81F03FA9B0075DC1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FE41BDF1F03FA9B0075DC1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE41BE01F03FA9B0075DC1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE41BE41F03FA9B0075DC1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE41BE51F03FA9B0075DC1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE41BFE1F03FA9B0075DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FE41BFF1F03FA9B0075DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE41C011F03FA9B0075DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuides";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FE41C021F03FA9B0075DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuides";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FE41C041F03FA9B0075DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuidesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuidesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kellogg LibGuides.app/Kellogg LibGuides";
+			};
+			name = Debug;
+		};
+		3FE41C051F03FA9B0075DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuidesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuidesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kellogg LibGuides.app/Kellogg LibGuides";
+			};
+			name = Release;
+		};
+		3FE41C071F03FA9B0075DC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuidesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuidesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kellogg LibGuides";
+			};
+			name = Debug;
+		};
+		3FE41C081F03FA9B0075DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3U6GMB8U4J;
+				INFOPLIST_FILE = "Kellogg LibGuidesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuidesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kellogg LibGuides";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE41BD31F03FA9B0075DC1B /* Build configuration list for PBXProject "Kellogg LibGuides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE41BFE1F03FA9B0075DC1B /* Debug */,
+				3FE41BFF1F03FA9B0075DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE41C001F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE41C011F03FA9B0075DC1B /* Debug */,
+				3FE41C021F03FA9B0075DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FE41C031F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE41C041F03FA9B0075DC1B /* Debug */,
+				3FE41C051F03FA9B0075DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FE41C061F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE41C071F03FA9B0075DC1B /* Debug */,
+				3FE41C081F03FA9B0075DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE41BD01F03FA9B0075DC1B /* Project object */;
+}
