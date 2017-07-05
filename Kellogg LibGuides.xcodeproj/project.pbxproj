@@ -14,6 +14,8 @@
 		3FE41BE61F03FA9B0075DC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE41BE41F03FA9B0075DC1B /* LaunchScreen.storyboard */; };
 		3FE41BF11F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BF01F03FA9B0075DC1B /* Kellogg_LibGuidesTests.swift */; };
 		3FE41BFC1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BFB1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift */; };
+		3FE41C0C1F040EBF0075DC1B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41C0B1F040EBF0075DC1B /* SplashViewController.swift */; };
+		3FE41C0E1F0411D00075DC1B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41C0D1F0411D00075DC1B /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F9F0AC11F0ACC21002C4653 /* Kellogg LibGuides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kellogg LibGuides.entitlements"; sourceTree = "<group>"; };
 		3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kellogg LibGuides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		3FE41BF71F03FA9B0075DC1B /* Kellogg LibGuidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kellogg LibGuidesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE41BFB1F03FA9B0075DC1B /* Kellogg_LibGuidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kellogg_LibGuidesUITests.swift; sourceTree = "<group>"; };
 		3FE41BFD1F03FA9B0075DC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE41C0B1F040EBF0075DC1B /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3FE41C0D1F0411D00075DC1B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +102,15 @@
 		3FE41BDA1F03FA9B0075DC1B /* Kellogg LibGuides */ = {
 			isa = PBXGroup;
 			children = (
+				3F9F0AC11F0ACC21002C4653 /* Kellogg LibGuides.entitlements */,
 				3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */,
 				3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */,
 				3FE41BDF1F03FA9B0075DC1B /* Main.storyboard */,
 				3FE41BE21F03FA9B0075DC1B /* Assets.xcassets */,
 				3FE41BE41F03FA9B0075DC1B /* LaunchScreen.storyboard */,
 				3FE41BE71F03FA9B0075DC1B /* Info.plist */,
+				3FE41C0B1F040EBF0075DC1B /* SplashViewController.swift */,
+				3FE41C0D1F0411D00075DC1B /* WebViewController.swift */,
 			);
 			path = "Kellogg LibGuides";
 			sourceTree = "<group>";
@@ -195,6 +203,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3U6GMB8U4J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					3FE41BEB1F03FA9B0075DC1B = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -262,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE41C0C1F040EBF0075DC1B /* SplashViewController.swift in Sources */,
 				3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */,
 				3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */,
+				3FE41C0E1F0411D00075DC1B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +430,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Kellogg LibGuides/Kellogg LibGuides.entitlements";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuides";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,10 +444,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Kellogg LibGuides/Kellogg LibGuides.entitlements";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rohankatakam.Kellogg-LibGuides";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,6 +531,7 @@
 				3FE41C021F03FA9B0075DC1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE41C031F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +540,7 @@
 				3FE41C051F03FA9B0075DC1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE41C061F03FA9B0075DC1B /* Build configuration list for PBXNativeTarget "Kellogg LibGuidesUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +549,7 @@
 				3FE41C081F03FA9B0075DC1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
