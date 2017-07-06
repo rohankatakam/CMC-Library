@@ -10,7 +10,7 @@ import UIKit
 
 class WebViewController: UIViewController, UIWebViewDelegate {
     
-    var urlString = ""
+    var urlStr = ""
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: UIWebView!
@@ -21,7 +21,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         activityIndicator.hidesWhenStopped = true
         
-        let url = NSURL (string: urlString);
+        let url = NSURL (string: urlStr);
         let requestObj = NSURLRequest(url: url! as URL);
         webView.loadRequest(requestObj as URLRequest);
         

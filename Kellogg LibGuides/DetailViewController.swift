@@ -12,20 +12,27 @@ class DetailViewController: UIViewController {
     
     var name : String = ""
     var urlString : String = ""
+    var logo : String = ""
     var descriptionString : String = ""
     
     @IBOutlet weak var descriptionView: UITextView!
+    @IBOutlet weak var logoView: UIImageView!
+    @IBOutlet weak var viewPageButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewPageButton.layer.cornerRadius = view.frame.width/42.0
+        
         self.automaticallyAdjustsScrollViewInsets   = false
 
         descriptionView.layer.cornerRadius = view.frame.width/20.0
         
+        //logoView.layer.cornerRadius = view.frame.width/8.0
+        
         self.navigationItem.title = name
         descriptionView.text = descriptionString
-        
+        loadLogo()
     }
     
     override func viewDidLayoutSubviews() {
@@ -40,15 +47,42 @@ class DetailViewController: UIViewController {
     @IBAction func backAction(_ sender: UIBarButtonItem) {
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func unwindToRootViewController(segue: UIStoryboardSegue) {
+        performSegue(withIdentifier: "unwindToMain", sender: nil)
     }
-    */
 
+    @IBAction func viewPageAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "showPage", sender: nil)
+    }
+    
+    func loadLogo(){
+        if logo != "http:" {
+            logoView.setImageFromURl(stringImageUrl: logo)
+            print(logo)
+        } else {
+            print("yuh")
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPage" {
+            let dvc = segue.destination as! WebViewController
+            
+            dvc.urlStr = urlString
+        }
+    }
+}
+
+extension UIImageView{
+    
+    func setImageFromURl(stringImageUrl urlString: String){
+        
+        if let url = NSURL(string: urlString) {
+            if let data = NSData(contentsOf: url as URL) {
+                self.image = UIImage(data: data as Data)
+            }
+        }
+    }
 }

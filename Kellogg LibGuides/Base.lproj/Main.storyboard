@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.5" y="62.323943661971832"/>
+            <point key="canvasLocation" x="782" y="97"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Bpq-6X-5iE">
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLx-MV-Fz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4530" y="61.267605633802816"/>
+            <point key="canvasLocation" x="2621" y="97"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="L3Z-XG-uK3">
@@ -117,28 +117,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-HI-kfY">
-                                <rect key="frame" x="16" y="223" width="288" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-HI-kfY">
+                                <rect key="frame" x="16" y="267" width="288" height="169"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-M2-8DK">
+                                <rect key="frame" x="16" y="87" width="288" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZb-WA-VSH">
+                                <rect key="frame" x="105" y="444" width="110" height="39"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal" title="View Page → "/>
+                                <connections>
+                                    <action selector="viewPageAction:" destination="ZZh-4L-3VJ" eventType="touchUpInside" id="TkC-Sv-T7t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37947183849999999" green="0.2505747378" blue="0.56999319790000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dZb-WA-VSH" firstAttribute="top" secondItem="yhp-HI-kfY" secondAttribute="bottom" constant="8" id="QP7-YS-Bjn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Usa-cf-mDC">
-                        <barButtonItem key="leftBarButtonItem" title="← Back" id="bjA-7a-0nm"/>
+                        <barButtonItem key="leftBarButtonItem" title="← Back" id="bjA-7a-0nm">
+                            <connections>
+                                <action selector="backAction:" destination="ZZh-4L-3VJ" id="0qs-VG-IHT"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="Gqd-xB-bH9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionView" destination="yhp-HI-kfY" id="J0v-DW-N4K"/>
-                        <segue destination="XvV-S3-86N" kind="presentation" identifier="showPage" id="pbN-KO-Wa0"/>
+                        <outlet property="logoView" destination="h1a-M2-8DK" id="Rne-df-n0L"/>
+                        <outlet property="viewPageButton" destination="dZb-WA-VSH" id="lAh-mT-Rpr"/>
+                        <segue destination="XvV-S3-86N" kind="presentation" identifier="showPage" id="Ow0-pc-iD7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhl-vM-HhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3671.25" y="61.267605633802816"/>
+            <point key="canvasLocation" x="1657.5" y="96.126760563380287"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="viz-fH-TMv">
@@ -217,7 +238,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV0-NO-GTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="62.323943661971832"/>
+            <point key="canvasLocation" x="-114" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ho7-Ui-AqF">
@@ -235,10 +256,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGH-V4-3SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673.75" y="61.267605633802816"/>
+            <point key="canvasLocation" x="782" y="860"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="1920" height="1080"/>
+        <image name="blank" width="400" height="210"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gqd-xB-bH9"/>
+    </inferredMetricsTieBreakers>
 </document>

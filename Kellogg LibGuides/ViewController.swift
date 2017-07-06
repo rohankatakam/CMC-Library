@@ -108,6 +108,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         guideDescriptions.append(str)
                     }
                     
+                    var guideLogos : [String] = []
+                    
+                    for element in parsedData {
+                        var meta = element["meta"] as! [String:Any]!
+                        
+                        var logo : String = "http:\(meta?["tn_url"] as! String)"
+                        
+                        if logo == "http:"{
+                            logo = "blank"
+                        }
+                        
+                        
+                        guideLogos.append(logo)
+                    }
+                    
                     
                     var guideURLs : [String] = []
                     
@@ -119,6 +134,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     DispatchQueue.main.sync {
                         self.data = guideNames
                         self.urls = guideURLs
+                        self.logos = guideLogos
                         self.descriptions = guideDescriptions
                         self.tableView.reloadData()
                     }
@@ -147,6 +163,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let indexPath = tableView.indexPathForSelectedRow?.row {
             dvc.name = data[indexPath]
             dvc.urlString = urls[indexPath]
+            dvc.logo = logos[indexPath]
             dvc.descriptionString = descriptions[indexPath]
         }
     }
