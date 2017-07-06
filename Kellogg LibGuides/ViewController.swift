@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIWebViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -18,6 +19,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var urls : [String] = []
     
+    var logos : [String] = []
+    
+    
+    var descriptions : [String] = []
+    
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
@@ -27,8 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         parseJSON(urlValue: "https://lgapi-us.libapps.com/1.1/assets?site_id=1956&key=ec14c106e1d7ce59e73675de000184d9&asset_types=10&expand=permitted_uses,az_types,az_props")
-        
-        
+
         
         tableView.layer.cornerRadius = view.frame.width/28.0
         tableView.clipsToBounds = true
@@ -37,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         webView = UIWebView(frame: UIScreen.main.bounds)
         webView.delegate = self
+        
         
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
@@ -65,7 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row).")
         
-        performSegue(withIdentifier: "showPage", sender: nil)
+        performSegue(withIdentifier: "showDetail", sender: nil)
     }
     
     
@@ -82,11 +88,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     
                     let parsedData = try JSONSerialization.jsonObject(with: data!) as! [[String:Any]]
                     
+                    
+                    
                     var guideNames : [String] = []
                     
                     for element in parsedData {
                         guideNames.append(element["name"]! as! String)
                     }
+                    
+                    var guideDescriptions : [String] = []
+                    
+                    for element in parsedData {
+                        var html = element["description"]! as! String
+                        
+                        var str = html.replacingOccurrences(of: "<[^>]+>\r\n", with: "", options: .regularExpression, range: nil)
+                        
+                        str = str.plainTextFromHTML()!
+                        
+                        guideDescriptions.append(str)
+                    }
+                    
                     
                     var guideURLs : [String] = []
                     
@@ -98,6 +119,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     DispatchQueue.main.sync {
                         self.data = guideNames
                         self.urls = guideURLs
+                        self.descriptions = guideDescriptions
                         self.tableView.reloadData()
                     }
                     
@@ -118,13 +140,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! WebViewController
+        let nav = segue.destination as! UINavigationController
+        
+        let dvc = nav.topViewController as! DetailViewController
         
         if let indexPath = tableView.indexPathForSelectedRow?.row {
+            dvc.name = data[indexPath]
             dvc.urlString = urls[indexPath]
+            dvc.descriptionString = descriptions[indexPath]
         }
     }
     
+    @IBAction func backAction(_ sender: UIBarButtonItem) {
+        print("yh")
+    }
     
 }
 
@@ -143,5 +172,19 @@ func filter(input: [String], filter:[String]) -> [String]{
     }
     
     return arr
+}
+
+extension String {
+    func plainTextFromHTML() -> String? {
+        let regexPattern = "<.*?>"
+        do {
+            let stripHTMLRegex = try NSRegularExpression(pattern: regexPattern, options: NSRegularExpression.Options.caseInsensitive)
+            let plainText = stripHTMLRegex.stringByReplacingMatches(in: self, options: NSRegularExpression.MatchingOptions.reportProgress, range: NSMakeRange(0, self.characters.count), withTemplate: "")
+            return plainText
+        } catch {
+            print("Warning: failed to create regular expression from pattern: \(regexPattern)")
+            return nil
+        }
+    }
 }
 

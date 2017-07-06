@@ -27,6 +27,10 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         
     }
     
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
+    
     func webViewDidStartLoad(_ webView: UIWebView) {
         activityIndicator.startAnimating()
     }

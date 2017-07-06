@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB7B9EA1F0E918E00D0ACE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7B9E91F0E918E00D0ACE5 /* DetailViewController.swift */; };
 		3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */; };
 		3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */; };
 		3FE41BE11F03FA9B0075DC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE41BDF1F03FA9B0075DC1B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3F9F0AC11F0ACC21002C4653 /* Kellogg LibGuides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kellogg LibGuides.entitlements"; sourceTree = "<group>"; };
+		3FB7B9E91F0E918E00D0ACE5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kellogg LibGuides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				3FE41BE71F03FA9B0075DC1B /* Info.plist */,
 				3FE41C0B1F040EBF0075DC1B /* SplashViewController.swift */,
 				3FE41C0D1F0411D00075DC1B /* WebViewController.swift */,
+				3FB7B9E91F0E918E00D0ACE5 /* DetailViewController.swift */,
 			);
 			path = "Kellogg LibGuides";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				3FE41C0C1F040EBF0075DC1B /* SplashViewController.swift in Sources */,
 				3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */,
+				3FB7B9EA1F0E918E00D0ACE5 /* DetailViewController.swift in Sources */,
 				3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */,
 				3FE41C0E1F0411D00075DC1B /* WebViewController.swift in Sources */,
 			);
