@@ -10,4 +10,5 @@ CMC Library is a mobile application client for the library in the Career Managem
   - Full access to A-Z Guides
 
 ### Installation
-**OTA INSTALLATION RELEASING JUNE 30. 2017**
+**INSTALLATION ONLY AVAILABLE FOR SELECT BETA TESTERS**
+  - Contact rohankatakam@yahoo.com if you would like to become a tester
