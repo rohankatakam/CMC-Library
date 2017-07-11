@@ -28,6 +28,8 @@ class SplashViewController: UIViewController {
     @IBAction func goAction(_ sender: UIButton) {
         performSegue(withIdentifier: "segue", sender: nil)
     }
+    
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
 
     /*
     // MARK: - Navigation

@@ -50,6 +50,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
     }
+
+    
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.contentView.backgroundColor = UIColor.lightText
@@ -156,20 +158,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nav = segue.destination as! UINavigationController
-        
-        let dvc = nav.topViewController as! DetailViewController
-        
-        if let indexPath = tableView.indexPathForSelectedRow?.row {
-            dvc.name = data[indexPath]
-            dvc.urlString = urls[indexPath]
-            dvc.logo = logos[indexPath]
-            dvc.descriptionString = descriptions[indexPath]
+        if(segue.identifier == "showDetail") {
+            let nav = segue.destination as! UINavigationController
+            
+            let dvc = nav.topViewController as! DetailViewController
+            
+            if let indexPath = tableView.indexPathForSelectedRow?.row {
+                dvc.name = data[indexPath]
+                dvc.urlString = urls[indexPath]
+                dvc.logo = logos[indexPath]
+                dvc.descriptionString = descriptions[indexPath]
+            }
+        } else {
+            print("yung bans")
         }
     }
     
     @IBAction func backAction(_ sender: UIBarButtonItem) {
         print("yh")
+        performSegue(withIdentifier: "unwindToVC1", sender: nil)
     }
     
 }

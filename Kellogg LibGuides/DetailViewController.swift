@@ -17,16 +17,19 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var logoView: UIImageView!
+    @IBOutlet weak var imageView: UIView!
     @IBOutlet weak var viewPageButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewPageButton.layer.cornerRadius = view.frame.width/42.0
+        viewPageButton.layer.cornerRadius = view.frame.width/50.0
         
         self.automaticallyAdjustsScrollViewInsets   = false
 
         descriptionView.layer.cornerRadius = view.frame.width/20.0
+        
+        imageView.layer.cornerRadius = view.frame.width/20.0
         
         //logoView.layer.cornerRadius = view.frame.width/8.0
         
@@ -45,12 +48,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func backAction(_ sender: UIBarButtonItem) {
-        
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func unwindToRootViewController(segue: UIStoryboardSegue) {
-        performSegue(withIdentifier: "unwindToMain", sender: nil)
-    }
 
     @IBAction func viewPageAction(_ sender: UIButton) {
         performSegue(withIdentifier: "showPage", sender: nil)

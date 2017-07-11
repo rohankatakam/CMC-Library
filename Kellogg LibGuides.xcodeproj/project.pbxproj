@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C84F3AD1F13D52F00A9704D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C84F3AC1F13D52F00A9704D /* UserNotifications.framework */; };
 		3FB7B9EA1F0E918E00D0ACE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7B9E91F0E918E00D0ACE5 /* DetailViewController.swift */; };
 		3FE41BDC1F03FA9B0075DC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDB1F03FA9B0075DC1B /* AppDelegate.swift */; };
 		3FE41BDE1F03FA9B0075DC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41BDD1F03FA9B0075DC1B /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C84F3AC1F13D52F00A9704D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		3F9F0AC11F0ACC21002C4653 /* Kellogg LibGuides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Kellogg LibGuides.entitlements"; sourceTree = "<group>"; };
 		3FB7B9E91F0E918E00D0ACE5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3FE41BD81F03FA9B0075DC1B /* Kellogg LibGuides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kellogg LibGuides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C84F3AD1F13D52F00A9704D /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C84F3AB1F13D52F00A9704D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C84F3AC1F13D52F00A9704D /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3FE41BCF1F03FA9B0075DC1B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +99,7 @@
 				3FE41BEF1F03FA9B0075DC1B /* Kellogg LibGuidesTests */,
 				3FE41BFA1F03FA9B0075DC1B /* Kellogg LibGuidesUITests */,
 				3FE41BD91F03FA9B0075DC1B /* Products */,
+				1C84F3AB1F13D52F00A9704D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -435,11 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Kellogg LibGuides/Kellogg LibGuides.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -449,11 +463,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Kellogg LibGuides/Kellogg LibGuides.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
