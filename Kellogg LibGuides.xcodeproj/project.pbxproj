@@ -637,6 +637,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -654,6 +655,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3U6GMB8U4J;
 				INFOPLIST_FILE = "Kellogg LibGuides/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohankatakam.CMCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

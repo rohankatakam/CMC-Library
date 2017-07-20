@@ -225,16 +225,17 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                         <state key="normal" title="→"/>
-                                        <connections>
-                                            <action selector="goAction:" destination="ksU-1M-AHC" eventType="touchUpInside" id="HST-Lf-qzm"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="161" id="Htg-7C-guI"/>
                                     <constraint firstAttribute="width" constant="246" id="fuo-W2-DdS"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SW0-Yp-bHB" appends="YES" id="La8-La-rm2"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,8 +254,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0T0-Cc-cg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SW0-Yp-bHB">
+                    <connections>
+                        <action selector="go:" destination="ksU-1M-AHC" id="q02-2e-nqg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-113" y="98"/>
+            <point key="canvasLocation" x="-114.375" y="97.183098591549296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jNB-gu-TKK">
