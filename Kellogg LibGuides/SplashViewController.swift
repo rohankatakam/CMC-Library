@@ -25,6 +25,10 @@ class SplashViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
     @IBAction func go(_ sender: UITapGestureRecognizer) {
         performSegue(withIdentifier: "segue", sender: nil)
     }

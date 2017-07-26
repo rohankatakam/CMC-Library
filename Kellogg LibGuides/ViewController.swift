@@ -133,6 +133,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     
                     
+                    /*
+                     
+                    //Remove Factiva
+                    
+                    var index = getIndex(arr: guideNames, filter: "Factiva")
+                    
+                    guideNames.remove(at: index)
+                    guideURLs.remove(at: index)
+                    guideLogos.remove(at: index)
+                     
+                     */
+                    
                     DispatchQueue.main.sync {
                         self.data = guideNames
                         self.urls = guideURLs
@@ -170,32 +182,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 dvc.descriptionString = descriptions[indexPath]
             }
         } else {
-            print("yung bans")
         }
     }
     
     @IBAction func backAction(_ sender: UIBarButtonItem) {
-        print("yh")
         performSegue(withIdentifier: "unwindToVC1", sender: nil)
     }
     
 }
 
-func filter(input: [String], filter:[String]) -> [String]{
-    var arr = input
-    var index = 0
+func getIndex(arr: [String], filter: String) -> Int {
+    var i = 0
+    
+    var returnVal = 0
     
     for element in arr {
-        for word in filter {
-            if element == word {
-                arr.remove(at: index)
-            }
+        if element == filter {
+            returnVal = i
         }
         
-        index += 1
+        i += 1
     }
     
-    return arr
+    return returnVal
 }
 
 extension String {
