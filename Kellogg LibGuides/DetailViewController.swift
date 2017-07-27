@@ -59,9 +59,8 @@ class DetailViewController: UIViewController {
     func loadLogo(){
         if logo != "http:" {
             logoView.setImageFromURl(stringImageUrl: logo)
-            print(logo)
         } else {
-            print("yuh")
+            
         }
     }
     

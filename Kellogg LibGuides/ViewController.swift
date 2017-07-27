@@ -71,8 +71,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row).")
-        
         performSegue(withIdentifier: "showDetail", sender: nil)
     }
     
@@ -133,30 +131,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     
                    
-                    
-                    display(arr: guideNames)
-                    print(guideNames.count)
-                    print("---------------------")
-                    
-                    
-                    display(arr: guideURLs)
-                    print(guideURLs.count)
-                    print("---------------------")
-
-                    
-                    display(arr: guideLogos)
-                    print(guideLogos.count)
-                    print("---------------------")
-
-                    
-                    display(arr: guideDescriptions)
-                    print(guideDescriptions.count)
-                    
-                    
-                    print("---------------------")
-                    
-                    
-                    print("Deleted Set")
                     
                     //Remove Capital IQ
                     let capitalIQ = getIndex(arr: guideNames, filter: "Capital IQ")
@@ -394,29 +368,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     
                     DispatchQueue.main.sync {
                         self.data = guideNames
-                        display(arr: guideNames)
-                        print(guideNames.count)
-                        print("---------------------")
+
                         self.urls = guideURLs
-                        display(arr: guideURLs)
-                        print(guideURLs.count)
-                        print("---------------------")
+
                         self.logos = guideLogos
-                        display(arr: guideLogos)
-                        print(guideLogos.count)
-                        print("---------------------")
+
                         self.descriptions = guideDescriptions
-                        display(arr: guideDescriptions)
-                        print(guideDescriptions.count)
+
                         self.tableView.reloadData()
                     }
-                    
-                    
-                    
-                    
-                    //print(guideURLs)
-                    //Figure out how to return guideName and guideURLs
-                    
                     
                     
                 } catch let error as NSError {
@@ -465,11 +425,6 @@ func getIndex(arr: [String], filter: String) -> Int {
     return returnVal
 }
 
-func display(arr: [String]){
-    for element in arr {
-        print(element + "\n")
-    }
-}
 
 extension String {
     func plainTextFromHTML() -> String? {
